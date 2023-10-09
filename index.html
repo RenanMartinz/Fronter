@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fronter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./estilos.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+  <!-- navbar -->
+  <header>
+    <nav class="navbar-expand-sm navbar bg-white fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img  src="./assets/logo-texto.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/logo-texto.png"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link fw-bold fs-4 text-dark me-4" href="#wa.me">Contato</a>
+              </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- banner 1 -->
+  <Main>
+  <section class="banners banner-1 d-flex flex-column justify-content-center text-center">
+    <div class="banners-titulo bg-body-secondary py-5">
+      <h1 class="fw-bold text-black">Sua oportunidade para alavancar seu negócio!</h1>
+      <p class="fw-bold text-black fs-4">Bem-vindo a Fronter, a sua nova opção para divulgar sua loja!</p>
+    </div>
+  </section>
+ 
+  <!-- Quem somos -->
+  <section class="mx-5 pb-5 border-bottom">
+    <h2 class="fs-1 fw-bold text-center my-5">Quem somos</h2>
+    <p class="fs-4"> Somos uma gráfica online especializada em diversos serviços WEB, como; cartão de visita digital; cardápio digital com ou sem comanda; convites para festas, eventos e casamentos; sites institucionais ou micro lojas virtuais. Nosso princípios é criar sites e cartões sempre estilizados, decorados e lindos, sempre levando em conta o estilo do cliente. Estamos inovando nossos serviços a cada ano para atender cada vez mais diferentes tipos de serviços.   
+    </p>
+  </section>
+
+  <!-- Serviços cards -->
+  <section class="py-5">
+    <h2 class="text-center fs-1 fw-bold pb-3">Nossos serviços</h2>
+    <p class="text-center text-black">Cada serviço é único e personalizado, então entre em contato para montar seu projeto e fazer um orçamento.</p>
+
+    <div class="container d-flex justify-content-around flex-wrap">
+
+      <div class="card m-4" style="width: 20rem;">
+        <img src="./assets/card-casamento.png" class="card-img-top"
+          alt="Balcão de padaria tradicional com alimentos diversos">
+        <div class="card-body">
+          <h5 class="card-title py-2 fw-bold">Convite de Casamento</h5>
+          <p class="card-text ">Facilite o modo que você convida as pessoas para seu casamento. Não precisa distribuir convite impresso ou usar métodos antigos. Use nossos serviços e facilite sua vida. 
+          </p> 
+          <a href="#" class="btn botao-padrao w-100 fw-bold botao_padrao" data-bs-toggle="modal" data-bs-target="#casamento">Quero detalhes</a>
+        </div>
+      </div>
+
+      <div class="card m-4" style="width: 20rem;">
+        <img src="./assets/card-cartao_visita.png" class="card-img-top" alt="Mesa de buffet com alimentos diversos">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Cartão de Visita</h5>
+          <p class="card-text">Mostre seu serviço ou loja com o nosso cartão de visita virtual personalizado e coloque nas suas redes sociais para mostrar a seus clientes que você está com tudo! 
+          </p>
+          <a href="#" class="btn botao-padrao w-100 fw-bold botao_padrao mt-3" data-bs-toggle="modal" data-bs-target="#cartaovisita">Quero detalhes</a> 
+        </div>
+      </div>
+
+      <div class="card m-4" style="width: 20rem;">
+        <img src="./assets/card-convite.png" class="card-img-top" alt="Caixa aberta armazenando comidas diversas">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Convite para Festa/Evento</h5>
+          <p class="card-text">Convide amigos, colegas e familiares para sua festa ou evento de forma personalizada. Coloque qualquer informação que você desejar deixando seu convite virtual personalizado.  
+          </p>
+          <a href="#" class="btn botao-padrao w-100 fw-bold botao_padrao mt-3" data-bs-toggle="modal" data-bs-target="#convitefesta">Quero detalhes</a>
+        </div>
+      </div>
+
+      <div class="card m-4" style="width: 20rem;">
+        <img src="./assets/card-website.png" class="card-img-top" alt="Caixa aberta armazenando comidas diversas">
+        <div class="card-body" >
+          <h5 class="card-title fw-bold">Website</h5>
+          <p class="card-text">Quer aumentar o número de clinetes? Crie um site para mostrar seus serviços ou projetos e ter mais pessoas visualizando seu negócioe assim ter muito mais clientes.    
+          </p>
+          <a href="#" class="btn botao-padrao w-100 fw-bold botao_padrao mt-3" data-bs-toggle="modal" data-bs-target="#website">Quero detalhes</a>
+        </div>
+      </div>
+
+      <div class="card m-4" style="width: 20rem;">
+        <img src="./assets/card-loja_virtual.png" class="card-img-top" alt="Caixa aberta armazenando comidas diversas">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Micro Loja Virtual</h5>
+          <p class="card-text">Com o nosso serviço de micro loja virtual você pode criar uma vitrine online para mostrar seus produtos a seus clientes e vender para todo o Brasil, aumentando muito mais suas vendas.  
+          </p>
+          <a href="#" class="btn botao-padrao w-100 fw-bold botao_padrao mt-3" data-bs-toggle="modal" data-bs-target="#lojavirtual">Quero detalhes</a>
+        </div>
+      </div>
+
+      <div class="card m-4" style="width: 20rem;">
+        <img src="./assets/card-cardapio.png" class="card-img-top" alt="Caixa aberta armazenando comidas diversas">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Cardápio Digital</h5>
+          <p class="card-text">Deixe seus clientes mais confortáveis para ver o cardápio e escolher o pedido sem a necessidade de um garçom ter que ficar listando e repetindo os itens do cardápio várias vezes.  
+          </p> 
+          <a href="#" class="btn botao-padrao w-100 fw-bold botao_padrao mt-3" data-bs-toggle="modal" data-bs-target="#cardapiodigital">Quero detalhes</a>
+        </div>
+      </div>
+
+      <div class="card m-4" style="width: 20rem;">
+        <img src="./assets/card-agendamento.png" class="card-img-top" alt="Caixa aberta armazenando comidas diversas">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Sistema de Agendamento</h5>
+          <p class="card-text">Não use cadernos ou agendas de papel para agendar seus clientes. É possível perde-las, estraga-las e ainda ocupa espaço na sua mesa. Tenha um agenda digital que é muito mais prático.  
+          </p>
+          <a href="#" class="btn botao-padrao w-100 fw-bold botao_padrao mt-3" data-bs-toggle="modal" data-bs-target="#agendamento">Quero detalhes</a>
+        </div>
+      </div>
+
+      <div class="card m-4" style="width: 20rem;">
+        <img src="./assets/card-delivery.png" class="card-img-top" alt="Caixa aberta armazenando comidas diversas">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Sistema de Delivery</h5>
+          <p class="card-text">Adicione este serviço de delivery a sua loja e aumente suas vendas. Ótimo sistema para quem tem clientes que gostam de receber o pedido sem sair do sofá e ter que pausar aquela série.   
+          </p>
+          <a href="#" class="btn botao-padrao w-100 fw-bold botao_padrao mt-3" data-bs-toggle="modal" data-bs-target="#agendamento">Quero detalhes</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <div id="wa.me">
+  <section  class="container text-center border-top mb-3 p-4 pb-0">
+    <h2 class="text-center fw-bold my-3 "> Entre em contato e faça seu orçamento</h2>
+    <a href="https://wa.me/11958808905" class="btn fs-2"><i class="bi bi-whatsapp"></i></a>
+    <a href="https://instagram.com/renan_martinz?igshid=OGQ5ZDc2ODk2ZA==" class="btn fs-2"><i class="bi bi-instagram"></i></a>
+  </section>
+
+  <!-- banner 2 -->
+  <section class="banners banner-2 d-flex flex-column justify-content-center text-center">
+    <div class="banners-titulo bg-body-secondary py-5">
+      <h2 class="fw-bold text-black">Usar divulgação e ferramentas digitais ajuda a diminuir o uso de impressões e descarte de papel. </h2>
+      <p class="fw-bold text-black fs-5">Ajude-nos a cuidar da natureza, evite o excesso de uso de papeis e impressões.</p>
+    </div> 
+  </section>
+
+  <!-- formulário -->
+  <!-- <section class="py-5">
+    <div class="row">
+    <div class="col-10 col-xl-8 mx-auto">
+
+    <div class="border border-2 rounded p-3 mx-10 input-range"> 
+      <h3 class="fw-bold p-3">Entre em contato!</h3>
+      <form id="contato" >
+        
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingNome" placeholder="Nome">
+          <label for="floatingNome">Nome</label>
+        </div>
+        
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingEmail" placeholder="nome@example.com">
+          <label for="floatingEmail">Email</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingTelefone" placeholder="Telefone">
+          <label for="floatingTelefone">Telefone</label>
+        </div>
+
+        <select class="form-select mb-3" aria-label="Default select example" placeholder="preferência de contato:">
+          <option selected>Preferência de contato:</option>
+          <option value="1">E-mail</option>
+          <option value="2">Whatsapp</option>
+        </select>
+
+        <select class="form-select mb-3" aria-label="Default select example" placeholder="preferência de contato:">
+          <option selected>Serviço desejado:</option>
+          <option value="1">Convite de Casamento</option>
+          <option value="2">Cartão de Visita</option>
+          <option value="3">Convite para Festa</option>
+          <option value="4">Convite para Evento</option>
+          <option value="5">Criar Website</option>
+          <option value="6">Criar micro Loja Virtual</option>
+          <option value="7">Cardápio Digital</option>
+          <option value="2">Criar sistema de agendamento</option>
+        </select>
+
+        <input value="Enviar" type="submit" class="btn botao_padrao w-100 p-1 fw-bold mt-3 py-2">
+      </form>
+    </div>
+  
+  </div>
+  </div>
+  </section> -->
+
+  <!-- rodapé -->
+  <footer class="text-center bg-white">
+    <section class="container p-4 pb-0">
+      <div class="p-3">
+        2023 <i class="bi bi-c-circle"></i> Desenvolvido por Fronter | Projeto sem fins comerciais.
+      </div>
+    </section>
+  </footer>
+
+  </Main>
+
+  <!-- Modal casamento -->
+  <div class="modal fade" id="casamento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fw-bold fs-5" id="exampleModalLabel">Convite de Casamento</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Com este serviço você pode ter um convite de casamento com design personalizado que conte a história do casal com detalhes únicos. Para este serviço você pode anúnciar local, data, hora, traje, redes sociais, deixar um texto como observação ou pedidos aos convidados. Você pede e a gente faz, simples assim.  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn botao-padrao botao_padrao" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal cartão de visita -->
+  <div class="modal fade" id="cartaovisita" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fw-bold fs-5" id="exampleModalLabel">Cartão de Visita</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Com este serviço você pode ter um cartão de Visita com muitas funcionalidades. Você pode colocar fotos de projetos anteriores, meios de comunicação, agendamento, listar seus serviços, colocar horário de atendimento, local da sua loja, escritório ou empresa, deixar um texto sobre quem você é e/ou como você trabalha e o que mais você desejar deixar no seu cartão digital.    
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn botao-padrao botao_padrao" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal convite para festa/evento -->
+  <div class="modal fade" id="convitefesta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fw-bold fs-5" id="exampleModalLabel">Convite para Festa/Evento</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Com este serviço você pode ter um convite para festa ou evento com design personalizado que conte uma história com detalhes únicos. Para este serviço você pode anúnciar local, data, hora, traje, redes sociais, deixar um texto como observação ou pedidos aos convidados. Você pede e a gente faz, simples assim.         </div>
+        <div class="modal-footer">
+          <button type="button" class="btn botao_padrao botao-padrao" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal criar website -->
+  <div class="modal fade" id="website" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fw-bold fs-5" id="exampleModalLabel">Website</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Com este serviço você pode ter um website para anúnciar sua loja, escola, cursos, escritorio, empresa, ou quealquer tipo de instituição que você tenha. Você poderá colocar quem você é, o propósito da sua instituição, serviços, colaboradores, projetos, meio de contato para receber clientes ou fazer orçamentos. O que você precisar, nós fazemos. 
+          <p></p>
+          <p>**Este não é um serviço para vendas online, verique o produto <strong>Criar Micro Loja Virtual</strong> e entenda qual serviço melhor se enquandra nos seus planos.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn botao_padrao botao-padrao" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal criar micro loja virtual -->
+    <div class="modal fade" id="lojavirtual" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fw-bold fs-5" id="exampleModalLabel">Micro Loja Virtual</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Com este serviço você pode ter uma vitrine da sua loja na internet e vender online para qualquer lugar do Brasil. Com este serviço você pode criar promoções, planos de fidelidade, controle de estoque, pausar um produto e muito mais quando você quiser. Nosso serviço é criar uma loja virtual funcional e com design único com a carinha da sua loja e deixar seus produtos para todos verem.   
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn botao_padrao botao-padrao" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal cardápio digital -->
+    <div class="modal fade" id="cardapiodigital" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fw-bold fs-5" id="exampleModalLabel">Cardápio Digital</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Com este serviço você terá um cardápio digital para mostrar a seus clientes ao invés do cardápio impresso. Além de ser mais prático, é também mais elegante. Com este cardápio, o cliente ficará mais confortável para escolher o que pedir, assim não precisa de um garçom dizendo e repetindo várias vezes o que tem no cardápio. Assim você optimiza o tempo dos seus garçons. O cardápio digital pode ter ou não comanda, caso ele tenha comanda, o cliente poderá fazer o pedido da mesa e o pedido chegará até à cozinha sem precisar de um garçom ir até a mesa recolher o pedido. O garçom precisará apenas ir entregar o pedido. O cardápio digital pode estar no google maps, no instagram do restaurante, um QR Code na mesa ou como você quiser deixa-lo para seus clientes.       
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn botao_padrao botao-padrao" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal sistema de agendamento -->
+    <div class="modal fade" id="agendamento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fw-bold fs-5" id="exampleModalLabel">Sistema de Agendamento</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Com este serviço você poderá agendar cleintes de forma prática e sem esforço. Você deixará sua agenda online, na suas redes sociais e/ou website, e os clientes que irão marcar hora pra ir até você. Você não terá que atender ligações ou receber clientes apenas para marcar hora, não vai precisar escrever exaustivamente em folhas e ainda ter que se preocupar em não perde-las. Atualize a forma como seus clientes marcam hora, fale com a gente e automatize suas tarefas.         
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn botao_padrao botao-padrao" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+</body>
+</html>

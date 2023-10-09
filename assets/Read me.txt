@@ -1,0 +1,2 @@
+Font style = Cardo
+Logo color = #bb591c
